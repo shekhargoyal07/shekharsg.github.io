@@ -1,118 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>About | Shekhar Sharan Goyal</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Dr. Shekhar Sharan Goyal – CV</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- vis-network CDN -->
+  <script type="text/javascript" src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
+  <link href="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.css" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7fbfc;
+      color: #222;
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
+      padding: 0;
     }
     header {
-      background: linear-gradient(to right, #005c88, #0077aa);
-      color: white;
-      padding: 3rem 2rem 2rem;
+      background: #0077aa;
+      color: #fff;
+      padding: 30px 0 15px 0;
       text-align: center;
+      border-bottom: 4px solid #005c99;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
     }
     main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
+      max-width: 900px;
+      margin: 30px auto 30px auto;
+      background: #fff;
       border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      padding: 40px 30px 30px 30px;
     }
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 32px;
     }
     h2 {
       color: #0077aa;
-      border-bottom: 2px solid #0077aa;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
+      margin-top: 0;
+      font-size: 1.35em;
+      margin-bottom: 12px;
+      border-left: 4px solid #0077aa;
+      padding-left: 10px;
+      font-weight: 600;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
+      margin-top: 0;
+      padding-left: 18px;
     }
-    ul li {
-      margin-bottom: 1rem;
-      padding-left: 1.2rem;
-      position: relative;
-    }
-    ul li::before {
-      content: "\2022";
-      position: absolute;
-      left: 0;
-      color: #0077aa;
-    }
-    #network {
-      width: 100%;
-      height: 700px;
-      margin-top: 20px;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      background: white;
+    li {
+      margin-bottom: 7px;
     }
     .download-cv {
-      display: block;
-      width: fit-content;
-      margin: 2rem auto 0;
-      padding: 0.75rem 1.5rem;
-      background-color: #0077aa;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+      background: #0077aa;
+      color: #fff;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      padding: 12px 28px;
+      font-size: 1.1em;
+      font-weight: 600;
       cursor: pointer;
+      margin: 20px 0 0 0;
+      transition: background 0.2s;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .download-cv:hover {
-      background-color: #005c88;
+      background: #005c99;
+    }
+    #network {
+      height: 600px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-top: 20px;
+      background: #fafcff;
+    }
+    @media (max-width: 600px) {
+      main { padding: 12px 2vw; }
+      #network { height: 350px; }
     }
   </style>
-
-  <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
 </head>
-
 <body>
   <header>
     <h1>Dr. Shekhar Sharan Goyal</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-      <a href="visualization.html">Visualization</a>
-      <a href="science_outreach.html">Science Outreach</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div>Research Scientist, UFZ Leipzig, Germany</div>
   </header>
 
   <main id="cv-content">
-    <!-- Keep all your existing sections like Biography, Education, etc. -->
+    <section>
+      <h2>Brief Biography</h2>
+      <p>
+        I am Dr. Shekhar Sharan Goyal, a Research Scientist at the Helmholtz Centre for Environmental Research (UFZ), Leipzig, Germany. 
+        I specialize in agricultural nutrient management, ecohydrology, and sustainable trade networks. 
+        My current research focuses on stream-temperature modeling under the <strong>FluSeeQ project</strong>, aiming to forecast hydrological stress across Germany.
+      </p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <ul>
+        <li>
+          <strong>Ph.D. in Earth Sciences</strong>, Indian Institute of Technology Gandhinagar (2020–2024, submitted)<br>
+          Advisor: Prof. Udit Bhatia<br>
+          Dissertation: <em>Quantifying Nutrient Pollution in Agricultural Systems, Restructuring Strategies for Management, and Assessing Implications on Trade Networks</em>
+        </li>
+        <li>
+          <strong>M.Sc. in Geology (Hons)</strong>, Indian Institute of Technology Kharagpur (2016–2018)<br>
+          Advisor: Prof. Abhijit Mukherjee<br>
+          Thesis: <em>Groundwater Evolution of Central Gangetic Aquifer System in the Vicinity of Varanasi</em>
+        </li>
+        <li>
+          <strong>B.Sc. in Geology (Hons)</strong>, Banaras Hindu University (2013–2016)
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research Experience</h2>
+      <ul>
+        <li>
+          <strong>Research Scientist</strong>, UFZ Leipzig (2024–Present)<br>
+          - Stream-temperature modeling under the FluSeeQ project.<br>
+          - Sustainable agricultural systems focusing on nutrient management and trade networks.
+        </li>
+        <li>
+          <strong>Visiting Researcher</strong>, UFZ Leipzig (Aug–Dec 2023)<br>
+          - Developed district-level nitrogen surplus datasets for Indian agriculture.<br>
+          - Nutrient pollution impact analysis for sustainable policy support.
+        </li>
+        <li>
+          <strong>Summer Intern</strong>, Wadia Institute of Himalayan Geology (2017)<br>
+          - Analyzed tectonic deformation and fault scarps in the Lower Himalayas.
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Research Interests</h2>
+      <ul>
+        <li>Agricultural nitrogen and phosphorus pollution</li>
+        <li>Ecohydrology and climate adaptation in cropping systems</li>
+        <li>Interstate trade networks and their environmental footprint</li>
+        <li>Stream temperature modeling and hydrologic stress analysis</li>
+        <li>Sustainable policy design and environmental resilience</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Grants & Awards</h2>
+      <ul>
+        <li>EGU Outstanding Student and PhD candidate Presentation (OSPP) Award, EGU General Assembly (2025)</li>
+        <li>IITGN Overseas Research Fellowship (2023)</li>
+        <li>GATE Scholarship (98.7 percentile, Earth Sciences), MHRD, India (2019)</li>
+        <li>JAM Scholarship (98.5 percentile, Geology), MHRD, India (2016)</li>
+        <li>CSIR-NET (LS) – Rank 15 (Geology), CSIR, India (2019)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+      <ul>
+        <li>Goyal, S.S., Dave, R., Kumar, R., Bhatia, U. (2024). Indian interstate trade exacerbates nutrient pollution in food production hubs. <em>Communications Earth & Environment</em> (Nature Portfolio).</li>
+        <li>Goyal, S.S., Kumar, R., Bhatia, U. (2024). Assessing temporal dynamics of nitrogen surplus in Indian agriculture: district scale data from 1966 to 2017. <em>Scientific Data</em> (Nature Portfolio).</li>
+        <li><em>Under Review:</em> Goyal, S.S., Kumar, R., Bhatia, U. Nutrient-Centric Restructuring Yields Greater Cross-benefits in Indian Agriculture. (Nature Communications)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Conference Presentations</h2>
+      <ul>
+        <li>(P) Goyal, S.S., Dave, R., Bhatia, U., Kumar, R. (2025). Towards Disentangling Environmental Costs of India's Agricultural Trade Network. <em>EGU General Assembly 2025</em>. DOI: <a href="https://doi.org/10.5194/egusphere-egu25-776" target="_blank">10.5194/egusphere-egu25-776</a></li>
+        <li>(I) Goyal, S.S., et al. (2024). Agricultural Pollution in Indian Interstate Trade Network. <em>EGU General Assembly 2024</em>.</li>
+        <li>(I) Bhatia, U., Goyal, S.S., Kumar, R. (2023). Restructuring the Indian Agricultural System towards Sustainability. <em>EGU General Assembly 2023</em>. DOI: <a href="https://doi.org/10.5194/egusphere-egu23-5975" target="_blank">10.5194/egusphere-egu23-5975</a></li>
+        <li>(P) Goyal, S.S., Bhatia, U. (2023). Trade-driven Greenhouse Gas Emissions in India. <em>EGU General Assembly 2023</em>. DOI: <a href="https://doi.org/10.5194/egusphere-egu23-741" target="_blank">10.5194/egusphere-egu23-741</a></li>
+        <li>(P) Goyal, S.S., Bhatia, U. (2021). Urbanization Impact on Urban River Water Quality. <em>AGU Fall Meeting 2021</em>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Current Projects</h2>
+      <ul>
+        <li>C-Narmada (2024–2025) – Agricultural and Nutrient Dynamics in the Narmada River Basin</li>
+        <li>FluSeeQ (2025–Ongoing)– Stream-Temperature Modeling and Energy Forecasting across Germany</li>
+      </ul>
+      <h2>Project Proposals Applied</h2>
+      <ul>
+        <li>UFZ UNLOCK (2025) – Benchmark Dataset for Agriculture</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Teaching Experience</h2>
+      <ul>
+        <li>Lab Teaching Assistant, IIT Gandhinagar:
+          <ul>
+            <li>Earth Surface Processes in the Anthropocene (2024)</li>
+            <li>River Morphology and Ecology (2023)</li>
+            <li>Modeling Earth System and Sustainability (2022)</li>
+            <li>Biodiversity Conservation and Sustainable Development (2020)</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Field Experience</h2>
+      <ul>
+        <li>River Water Quality Sampling, Surat City (2022)</li>
+        <li>Groundwater Quality Survey, Varanasi City (2017)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python, R, MATLAB, C, C++, LaTeX</li>
+        <li><strong>Climate Data Handling:</strong> NCL, CDO, NCO</li>
+        <li><strong>Software:</strong> ArcGIS, QGIS, SWAT, MIKE ECOLAB, QUAL2E, HEC-RAS</li>
+        <li><strong>Instrumentation:</strong> EPMA, Ion Chromatograph, ICP-OES, pH Meter</li>
+        <li><strong>Languages:</strong> Fluent in English and Hindi</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Leadership & Professional Activities</h2>
+      <ul>
+        <li>Organizer, Workshop on "Resilience of Power and Allied Lifeline Infrastructure Systems," IITGN (2022)</li>
+        <li>Organizer, Workshop on "From Lab to Land: Technology Transfer for Farmers," IITGN (2024)</li>
+        <li>Executive Member, Prithvi, IIT Kharagpur (2017)</li>
+      </ul>
+    </section>
 
     <section>
       <h2>Collaborative Network</h2>
@@ -122,11 +244,8 @@
     <button class="download-cv" onclick="downloadCV()">Download Detailed CV (PDF)</button>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Shekhar Sharan Goyal</p>
-  </footer>
-
-  <script>
+  <!-- Network Visualization Script -->
+  <script type="text/javascript">
     function drawNetwork() {
       const nodes = new vis.DataSet([
         { id: 1, label: "Shekhar Sharan Goyal", shape: "circle", color: { background: "#005c99", border: "#003366", highlight: { background: "#007acc", border: "#005c99" } }, font: { color: "#ffffff", size: 22, bold: true }, size: 30 },
@@ -194,6 +313,7 @@
         }
       });
     }
+    window.addEventListener('DOMContentLoaded', drawNetwork);
 
     function downloadCV() {
       const element = document.getElementById('cv-content');
@@ -206,8 +326,8 @@
       };
       html2pdf().set(opt).from(element).save();
     }
-
-    drawNetwork();
   </script>
+  <!-- html2pdf CDN for PDF export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </body>
 </html>
