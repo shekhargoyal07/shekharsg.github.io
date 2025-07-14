@@ -1,132 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>About | Shekhar Sharan Goyal</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
+```html
+
+
+
+  
+  Dr. Shekhar Sharan Goyal – CV
+  
+  
+  
+  
+  
     body {
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f7fbfc;
+      color: #222;
       margin: 0;
-      background: #f4f4f4;
-      color: #333;
+      padding: 0;
     }
     header {
-      background: linear-gradient(to right, #005c88, #0077aa);
-      color: white;
-      padding: 3rem 2rem 2rem;
+      background: #0077aa;
+      color: #fff;
+      padding: 30px 0 15px 0;
       text-align: center;
+      border-bottom: 4px solid #005c99;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-    nav {
-      background: rgba(0, 0, 0, 0.7);
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
+    h1 {
+      margin: 0 0 10px 0;
+      font-size: 2.5em;
+      letter-spacing: 1px;
     }
     main {
-      max-width: 1000px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
+      max-width: 900px;
+      margin: 30px auto 30px auto;
+      background: #fff;
       border-radius: 10px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.07);
+      padding: 40px 30px 30px 30px;
     }
     section {
-      margin-bottom: 2.5rem;
+      margin-bottom: 32px;
     }
     h2 {
       color: #0077aa;
-      border-bottom: 2px solid #0077aa;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
+      margin-top: 0;
+      font-size: 1.35em;
+      margin-bottom: 12px;
+      border-left: 4px solid #0077aa;
+      padding-left: 10px;
+      font-weight: 600;
     }
     ul {
-      list-style: none;
-      padding-left: 0;
+      margin-top: 0;
+      padding-left: 18px;
     }
-    ul li {
-      margin-bottom: 1rem;
-      padding-left: 1.2rem;
-      position: relative;
-    }
-    ul li::before {
-      content: "\2022";
-      position: absolute;
-      left: 0;
-      color: #0077aa;
-    }
-    #network {
-      width: 100%;
-      height: 700px;
-      margin-top: 20px;
-      border: 1px solid #ccc;
-      border-radius: 12px;
-      background: white;
+    li {
+      margin-bottom: 7px;
     }
     .download-cv {
-      display: block;
-      width: fit-content;
-      margin: 2rem auto 0;
-      padding: 0.75rem 1.5rem;
-      background-color: #0077aa;
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
+      background: #0077aa;
+      color: #fff;
       border: none;
-      border-radius: 5px;
+      border-radius: 6px;
+      padding: 12px 28px;
+      font-size: 1.1em;
+      font-weight: 600;
       cursor: pointer;
+      margin: 20px 0 0 0;
+      transition: background 0.2s;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
     .download-cv:hover {
-      background-color: #005c88;
+      background: #005c99;
     }
-  </style>
+    #network {
+      height: 600px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      margin-top: 20px;
+      background: #fafcff;
+    }
+    @media (max-width: 600px) {
+      main { padding: 12px 2vw; }
+      #network { height: 350px; }
+    }
+  
 
-  <script src="https://unpkg.com/vis-network@9.1.2/dist/vis-network.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
-</head>
 
-<body>
-  <header>
-    <h1>Dr. Shekhar Sharan Goyal</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="publications.html">Publications</a>
-      <a href="visualization.html">Visualization</a>
-      <a href="science_outreach.html">Science Outreach</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+  
+    Dr. Shekhar Sharan Goyal
+    Research Scientist, UFZ Leipzig, Germany
+  
 
-  <main id="cv-content">
-    <!-- Keep all your existing sections like Biography, Education, etc. -->
+  
+    
+      Brief Biography
+      
+        I am Dr. Shekhar Sharan Goyal, a Research Scientist at the Helmholtz Centre for Environmental Research (UFZ), Leipzig, Germany. 
+        I specialize in agricultural nutrient management, ecohydrology, and sustainable trade networks. 
+        My current research focuses on stream-temperature modeling under the FluSeeQ project, aiming to forecast hydrological stress across Germany.
+      
+    
 
-    <section>
-      <h2>Collaborative Network</h2>
-      <div id="network"></div>
-    </section>
+    
+      Education
+      
+        
+          Ph.D. in Earth Sciences, Indian Institute of Technology Gandhinagar (2020–2024, submitted)
+          Advisor: Prof. Udit Bhatia
+          Dissertation: Quantifying Nutrient Pollution in Agricultural Systems, Restructuring Strategies for Management, and Assessing Implications on Trade Networks
+        
+        
+          M.Sc. in Geology (Hons), Indian Institute of Technology Kharagpur (2016–2018)
+          Advisor: Prof. Abhijit Mukherjee
+          Thesis: Groundwater Evolution of Central Gangetic Aquifer System in the Vicinity of Varanasi
+        
+        
+          B.Sc. in Geology (Hons), Banaras Hindu University (2013–2016)
+        
+      
+    
 
-    <button class="download-cv" onclick="downloadCV()">Download Detailed CV (PDF)</button>
-  </main>
+    
+      Research Experience
+      
+        
+          Research Scientist, UFZ Leipzig (2024–Present)
+          - Stream-temperature modeling under the FluSeeQ project.
+          - Sustainable agricultural systems focusing on nutrient management and trade networks.
+        
+        
+          Visiting Researcher, UFZ Leipzig (Aug–Dec 2023)
+          - Developed district-level nitrogen surplus datasets for Indian agriculture.
+          - Nutrient pollution impact analysis for sustainable policy support.
+        
+        
+          Summer Intern, Wadia Institute of Himalayan Geology (2017)
+          - Analyzed tectonic deformation and fault scarps in the Lower Himalayas.
+        
+      
+    
 
-  <footer>
-    <p>&copy; 2025 Shekhar Sharan Goyal</p>
-  </footer>
+    
+      Research Interests
+      
+        Agricultural nitrogen and phosphorus pollution
+        Ecohydrology and climate adaptation in cropping systems
+        Interstate trade networks and their environmental footprint
+        Stream temperature modeling and hydrologic stress analysis
+        Sustainable policy design and environmental resilience
+      
+    
 
-  <script>
+    
+      Grants & Awards
+      
+        EGU Outstanding Student and PhD candidate Presentation (OSPP) Award, EGU General Assembly (2025)
+        IITGN Overseas Research Fellowship (2023)
+        GATE Scholarship (98.7 percentile, Earth Sciences), MHRD, India (2019)
+        JAM Scholarship (98.5 percentile, Geology), MHRD, India (2016)
+        CSIR-NET (LS) – Rank 15 (Geology), CSIR, India (2019)
+      
+    
+
+    
+      Publications
+      
+        Goyal, S.S., Dave, R., Kumar, R., Bhatia, U. (2024). Indian interstate trade exacerbates nutrient pollution in food production hubs. Communications Earth & Environment (Nature Portfolio).
+        Goyal, S.S., Kumar, R., Bhatia, U. (2024). Assessing temporal dynamics of nitrogen surplus in Indian agriculture: district scale data from 1966 to 2017. Scientific Data (Nature Portfolio).
+        Under Review: Goyal, S.S., Kumar, R., Bhatia, U. Nutrient-Centric Restructuring Yields Greater Cross-benefits in Indian Agriculture. (Nature Communications)
+      
+    
+
+    
+      Conference Presentations
+      
+        (P) Goyal, S.S., Dave, R., Bhatia, U., Kumar, R. (2025). Towards Disentangling Environmental Costs of India's Agricultural Trade Network. EGU General Assembly 2025. DOI: 10.5194/egusphere-egu25-776
+        (I) Goyal, S.S., et al. (2024). Agricultural Pollution in Indian Interstate Trade Network. EGU General Assembly 2024.
+        (I) Bhatia, U., Goyal, S.S., Kumar, R. (2023). Restructuring the Indian Agricultural System towards Sustainability. EGU General Assembly 2023. DOI: 10.5194/egusphere-egu23-5975
+        (P) Goyal, S.S., Bhatia, U. (2023). Trade-driven Greenhouse Gas Emissions in India. EGU General Assembly 2023. DOI: 10.5194/egusphere-egu23-741
+        (P) Goyal, S.S., Bhatia, U. (2021). Urbanization Impact on Urban River Water Quality. AGU Fall Meeting 2021.
+      
+    
+
+    
+      Current Projects
+      
+        C-Narmada (2024–2025) – Agricultural and Nutrient Dynamics in the Narmada River Basin
+        FluSeeQ (2025–Ongoing)– Stream-Temperature Modeling and Energy Forecasting across Germany
+      
+      Project Proposals Applied
+      
+        UFZ UNLOCK (2025) – Benchmark Dataset for Agriculture
+      
+    
+
+    
+      Teaching Experience
+      
+        Lab Teaching Assistant, IIT Gandhinagar:
+          
+            Earth Surface Processes in the Anthropocene (2024)
+            River Morphology and Ecology (2023)
+            Modeling Earth System and Sustainability (2022)
+            Biodiversity Conservation and Sustainable Development (2020)
+          
+        
+      
+    
+
+    
+      Field Experience
+      
+        River Water Quality Sampling, Surat City (2022)
+        Groundwater Quality Survey, Varanasi City (2017)
+      
+    
+
+    
+      Skills
+      
+        Programming: Python, R, MATLAB, C, C++, LaTeX
+        Climate Data Handling: NCL, CDO, NCO
+        Software: ArcGIS, QGIS, SWAT, MIKE ECOLAB, QUAL2E, HEC-RAS
+        Instrumentation: EPMA, Ion Chromatograph, ICP-OES, pH Meter
+        Languages: Fluent in English and Hindi
+      
+    
+
+    
+      Leadership & Professional Activities
+      
+        Organizer, Workshop on "Resilience of Power and Allied Lifeline Infrastructure Systems," IITGN (2022)
+        Organizer, Workshop on "From Lab to Land: Technology Transfer for Farmers," IITGN (2024)
+        Executive Member, Prithvi, IIT Kharagpur (2017)
+      
+    
+
+    
+      Collaborative Network
+      
+    
+
+    Download Detailed CV (PDF)
+  
+
+  
+  
     function drawNetwork() {
       const nodes = new vis.DataSet([
         { id: 1, label: "Shekhar Sharan Goyal", shape: "circle", color: { background: "#005c99", border: "#003366", highlight: { background: "#007acc", border: "#005c99" } }, font: { color: "#ffffff", size: 22, bold: true }, size: 30 },
@@ -194,6 +314,7 @@
         }
       });
     }
+    window.addEventListener('DOMContentLoaded', drawNetwork);
 
     function downloadCV() {
       const element = document.getElementById('cv-content');
@@ -206,8 +327,9 @@
       };
       html2pdf().set(opt).from(element).save();
     }
+  
+  
+  
 
-    drawNetwork();
-  </script>
-</body>
-</html>
+
+```
